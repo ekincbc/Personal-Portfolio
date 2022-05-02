@@ -1,0 +1,142 @@
+@import "./variables.scss";
+
+.app--dark {
+  background-color: $black;
+
+  .nav__link {
+    @media (min-width: 800px) {
+      color: $grey-text;
+      background-color: $light-blue;
+
+      &:hover {
+        color: white;
+        background-color: $grey;
+      }
+
+      &--active {
+        color: $light-blue;
+      }
+    }
+  }
+
+  .process {
+    color: $grey-light;
+    background-color: $grey-dark;
+
+    &__container {
+      color: $grey-text;
+      background-color: $grey-light;
+    }
+
+    &__circle {
+      background-color: $grey-dark;
+    }
+  }
+
+  .skills {
+    .heading {
+      color: $light-blue;
+    }
+
+    &__label {
+      color: $grey-dark;
+      background-color: $grey-light;
+    }
+
+    &__progress-bar {
+      background-color: $grey-text;
+    }
+
+    &__percentage {
+      color: $grey-light;
+    }
+  }
+
+  .portfolio {
+    .heading {
+      color: $grey-dark;
+    }
+
+    &__item {
+      color: $grey-light;
+      background-color: $grey-dark;
+
+      &--highlight {
+        background-color: $grey;
+      }
+    }
+
+    &__desc {
+      background-color: $grey-text;
+    }
+  }
+
+  .about {
+    background-color: $grey-dark;
+
+    .heading {
+      color: $light-blue;
+    }
+
+    &__desc {
+      color: $grey-light;
+    }
+  }
+
+  .social {
+    background-color: $grey-light;
+
+    .heading {
+      color: $grey-dark;
+    }
+
+    &__link path {
+      fill: $grey-dark;
+    }
+  }
+
+  .contact {
+    .heading {
+      color: $grey-dark;
+    }
+
+    .form__input {
+      color: $grey-dark;
+      border-bottom: 1px solid $grey-text;
+
+      &::placeholder {
+        color: $grey-text;
+      }
+    }
+
+    .form__label {
+      color: $grey-text;
+    }
+
+    .form__textarea {
+      color: $grey;
+      background-color: $grey-dark;
+    }
+
+    .form__button {
+      color: $light-blue;
+      background-color: $grey;
+    }
+  }
+
+  .footer {
+    background-color: $grey-dark;
+
+    .heading {
+      color: $light-blue;
+    }
+
+    .social__link path {
+      fill: $light-blue;
+    }
+
+    &__copy {
+      color: $light-blue;
+    }
+  }
+}

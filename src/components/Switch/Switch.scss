@@ -1,0 +1,54 @@
+@import "../variables.scss";
+
+.switch {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 1rem;
+	right: calc(50% - 18px);
+	z-index: 2;
+
+	@media (min-width: 800px) {
+		top: auto;
+		bottom: 1.5rem;
+    right: 2.5rem;
+	}
+
+	&__btn {
+		width: 2.25rem;
+		height: 1rem;
+		background-color: rgba(#cccccc, 0.75);
+		border-radius: 2rem;
+		position: relative;
+		cursor: pointer;
+
+		@media (min-width: 800px) {
+			background-color: rgba(#cccccc, 0.75);
+		}
+	}
+
+	&__circle {
+		width: 0.75rem;
+		height: 0.75rem;
+		background-color: rgba(#fafafa, 0.75);
+		border-radius: 100%;
+		position: absolute;
+		top: 2px;
+		left: 4px;
+		right: auto;
+		transition: 0.2s;
+	}
+
+	&--on {
+
+		.switch__btn {
+			background-color: rgba($grey-text, 0.75);
+		}
+
+		.switch__circle {
+	    background-color: rgba($grey-dark, 0.75);
+	    left: auto;
+	    right: 2px;
+	  }
+	}
+}

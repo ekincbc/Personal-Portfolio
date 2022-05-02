@@ -1,0 +1,52 @@
+@import "../variables.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  color: $grey-light;
+  background-color: $grey-dark;
+  background-image: url("../../img/4327989.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 0 5%;
+
+  @media (min-width: 800px) {
+    justify-content: flex-start;
+    height: 80vh;
+    padding-top: 10rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 0;
+
+    @media (min-width: 800px) {
+      font-size: 4rem;
+    }
+  }
+
+  &__desc {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 0;
+
+    @media (min-width: 800px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__link {
+    color: $light-blue;
+    border-bottom: 5px solid $grey-light;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
